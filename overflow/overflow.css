@@ -1,0 +1,17 @@
+/*超过一行显示省略号*/
+/*p {
+	width: 550px;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}*/
+
+/*超过多行显示省略号*/
+p {
+	width: 550px;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 3;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+}
